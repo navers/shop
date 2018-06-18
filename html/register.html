@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <script src="../js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"></link>
+    <script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <style type="text/css">
+        div.registerDiv{
+            margin: 10px 20px;
+            text-align: center;
+        }
+        table.registerTable{
+            color: #3c3c3c;
+            font-size: 16px;
+            table-layout: fixed;
+            margin-top: 50px;
+        }
+        table.registerTable td{
+            padding: 10px 30px;
+        }
+        table.registerTable input{
+            border: 1px solid #dedede;
+            width: 213px;
+            height: 36px;
+            font-size: 14px;
+        }
+        table.registerTable button{
+            width: 170px;
+            height: 36px;
+            border-radius: 2px;
+            color: white;
+            background-color: #c40000;
+            border-width: 0px;
+        }
+        td.registerTip{
+            font-weight: bold;
+        }
+        td.registerTableLeftTD{
+            width: 300px;
+            text-align: right;
+        }
+        td.registerTableRightTD{
+            width: 300px;
+            text-align: left;
+        }
+        td.registerButtonTD{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="registerDiv">
+        <table align="center" class="registerTable">
+            <tbody>
+                <tr>
+                    <td class="registerTip registerTableLeftTD">设置会员名</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="registerTableLeftTD">登陆名</td>
+                    <td class="registerTableRightTD">
+                        <input placeholder="会员名一旦设置成功，无法修改" name="name" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="registerTip registerTableLeftTD">设置登陆密码</td>
+                    <td class="registerTableRightTD">登陆时验证，保护账号信息</td>
+                </tr>
+                <tr>
+                    <td class="registerTableLeftTD">登陆密码</td>
+                    <td class="registerTableRightTD">
+                        <input type="password" placeholder="设置你的登陆密码" name="password" id="password"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="registerTableLeftTD">密码确认</td>
+                    <td class="registerTableRightTD">
+                        <input type="password" placeholder="请再次输入你的密码" id="repeatpassword"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="registerButtonTD" colspan="2">
+                        <a href="#nowhere"><button>提   交</button></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

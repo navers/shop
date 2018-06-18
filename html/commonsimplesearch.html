@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>commonsimplesearch.html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="../js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"></link>
+    <script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <style>
+      body{
+        font-size:12px;
+        font-family:Arial;
+      }
+      div.simpleSearchDiv{
+        background-color:#c40000;
+        width:300px;
+        margin:10px 20px 40px;
+        height:40px;
+        padding:1px;
+        display:block;
+      }
+      div.simpleSearchDiv input{
+        width:225px;
+        height:34px;
+        border:1px solid transparent;
+        margin:2px;
+        font-size:14px;
+        outline:none;
+      }
+      div.simpleSearchDiv button{
+        width:60px;
+        border:1px solid transparent;
+        font-size:14px;
+        /* font-weight:bold; */
+        color:white;
+        background-color:#c40000;
+      }
+      div.simpleSearchBlow{
+        margin-top:3px;
+        margin-left:-20px;
+      }
+      div.simpleSearchBlow span{
+        color:#999;
+      }
+      div.simpleSearchBlow a{
+        padding:0px 20px;
+        font-size:14px;
+      }
+      img.simpleLogo{
+        position:absolute;
+        left:10px;
+        top:50px;
+        width:140px;
+        /* z-index:-1px; */
+      }
+      a{
+        color:#999;
+      }
+      a:hover{
+        color:#c40000;
+        text-decoration:none;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <a href="nowhere"><img class="simpleLogo" src="../img/site/simpleLogo.png"></a>
+    <div class="simpleSearchDiv pull-right">
+      <input type="text" placeholder="平衡车 原汁机" name="keyword">
+      <button type="button" class="simpleSearchButton">搜索</button>
+      <div class="simpleSearchBlow">
+        <span><a href="#nowhere">冰箱</a><span>|</span></span>
+        <span><a href="#nowhere">空调</a><span>|</span></span>
+        <span><a href="#nowhere">女表</a><span>|</span></span>
+        <span><a href="#nowhere">男表</a></span>
+      </div>
+    </div>
+  </body>
+</html>
